@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>  
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124044115-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124044115-1');
+</script>                                                                     
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft Word 97">
+<title>Wait And See</title>
+                         
+<script type="text/javascript">
+/****************************************** Dissolving Image Rollover- By Roy Whittle (http://www.javascript-fx.com/)* Featured on/available at http://www.dynamicdrive.com/* This notice must stay intact for use*****************************************/
+//Generate transition CSS (transition=0 to 23)
+document.write('<STYLE TYPE="text/css">.imgTrans{ filter:revealTrans(duration=0.4,transition=23)}</STYLE>');
+//Uncomment the next line for fading rollovers instead of dissolving:
+//document.write('<STYLE TYPE="text/css">.imgTrans{ filter:blendTrans(duration=0.4) }</STYLE>');
+var onImages=new Array();
+function Rollover(imgName, imgSrc){	
+	onImages[imgName] = new Image();	
+	onImages[imgName].src = imgSrc;}
+function turnOn(imgName){ 	
+	if(document.images[imgName].filters != null)
+		document.images[imgName].filters[0].apply();
+		document.images[imgName].offSrc = document.images[imgName].src;
+		document.images[imgName].src    = onImages[imgName].src;
+		if(document.images[imgName].filters != null)					document.images[imgName].filters[0].play();}
+function turnOff(imgName){ 	
+	if(document.images[imgName].filters != null)
+		document.images[imgName].filters[0].stop();
+		document.images[imgName].src = document.images[imgName].offSrc;}
+//Specify name of participating images, plus paths to their onMouseover replacements:
+Rollover("home", "homeon.jpg");
+Rollover("dates", "dateson.jpg");
+Rollover("pics", "picson.jpg");  
+Rollover("about", "abouton.jpg");  
+Rollover("links", "linkson.jpg");  
+
+</script>
+                 
+</head>
+
+ <body text="#000000" link="#222222" vlink="#333333" alink="#444444">
+
+<br><big><big><big>
+<img src="name.jpg">
+<br>
+<br>
+
+<a href="index.html" onmouseover="turnOn('home');" onmouseout="turnOff('home');">
+ <img src="homeoff.jpg" width="70" height="45" alt="Tour" img="" name="home" class="imgTrans" border="0"></a>
+
+<a href="dates.html" onmouseover="turnOn('dates');" onmouseout="turnOff('dates');">
+ <img src="datesoff.jpg" width="70" height="45" alt="Tour" img="" name="dates" class="imgTrans" border="0"></a>
+
+<a href="pictures.html" onmouseover="turnOn('pics');" onmouseout="turnOff('pics');"> 
+<img src="picsoff.jpg" width="70" height="45" alt="Pictures" img="" name="pics" class="imgTrans" border="0"></a>
+<br>
+<big>
+<br>
+<a href="http://www.youtube.com/waitandseeband1"><img src="youtube.jpg" border="0">Wait and See Videos.  Click here...</a>
+<br>
+<br>
+<a href="http://www.youtube.com/1acetone"><img src="youtube.jpg" border="0">Videos of Friends of Wait and See.  Click here...</a>
+<br>
+<br>
+<a href="http://www.reverbnation.com/c./a4/10181823/3131458/Artist/0/User/link"> Click here to hear original Wait and See music on REVERBNATION</a>
+<br>
+
+<!-- Facebook Badge START -->
+<a href="http://www.facebook.com/pages/Wait-and-See/104937276246551" "></a>
+<br/>
+<a href="http://www.facebook.com/pages/Wait-and-See/104937276246551"><img src="http://badge.facebook.com/badge/104937276246551.2218.4018166.png"" />Click here to visit our Facebook Page!</a><br/><a <!-- Facebook Badge END -->
+<br>
+
+<a href="http://www.facebook.com/pages/Upright-Primates/824766744398431"><img src="monkey3d.gif" border="0"> Hey!  Remember the Primates? Click here...</a><br>
+
+</big>
+
+
+</big></big>
+</body>
+</html>

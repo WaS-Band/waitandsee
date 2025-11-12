@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>      
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124044115-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124044115-1');
+</script> 
+                                                                 
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft Word 97">
+<meta name="Description" content="wait and see">
+<meta name="Keywords" content="music,band,rock,pop">
+<title>Wait And See</title>
+                         
+<script type="text/javascript">
+/****************************************** Dissolving Image Rollover- By Roy Whittle (http://www.javascript-fx.com/)* Featured on/available at http://www.dynamicdrive.com/* This notice must stay intact for use*****************************************/
+//Generate transition CSS (transition=0 to 23)
+document.write('<STYLE TYPE="text/css">.imgTrans{ filter:revealTrans(duration=0.4,transition=23)}</STYLE>');
+//Uncomment the next line for fading rollovers instead of dissolving:
+//document.write('<STYLE TYPE="text/css">.imgTrans{ filter:blendTrans(duration=0.4) }</STYLE>');
+var onImages=new Array();
+function Rollover(imgName, imgSrc){	
+	onImages[imgName] = new Image();	
+	onImages[imgName].src = imgSrc;}
+function turnOn(imgName){ 	
+	if(document.images[imgName].filters != null)
+		document.images[imgName].filters[0].apply();
+		document.images[imgName].offSrc = document.images[imgName].src;
+		document.images[imgName].src    = onImages[imgName].src;
+		if(document.images[imgName].filters != null)					document.images[imgName].filters[0].play();}
+function turnOff(imgName){ 	
+	if(document.images[imgName].filters != null)
+		document.images[imgName].filters[0].stop();
+		document.images[imgName].src = document.images[imgName].offSrc;}
+//Specify name of participating images, plus paths to their onMouseover replacements:
+Rollover("home", "homeon.jpg");
+Rollover("dates", "dateson.jpg");
+Rollover("pics", "picson.jpg");  
+Rollover("about", "abouton.jpg");  
+Rollover("links", "linkson.jpg");  
+
+</script>
+                 
+</head>
+ <body text="#000000" link="#222222" vlink="#333333" alink="#444444">
+
+<br><big><big><big>
+<img src="name.jpg">
+
+<br>
+Wait and See - Playing rock and pop in Southern Ontario.
+<br>
+<br>
+<br>
+
+<a href="index.html" onmouseover="turnOn('home');" onmouseout="turnOff('home');">
+ <img src="homeoff.jpg" width="70" height="45" alt="home" img="" name="home" class="imgTrans" border="0"></a>
+
+<a href="dates.html" onmouseover="turnOn('dates');" onmouseout="turnOff('dates');"> 
+<img src="datesoff.jpg" width="70" height="45" alt="Dates" img="" name="dates" class="imgTrans" border="0"></a>
+
+<a href="links.html" onmouseover="turnOn('links');" onmouseout="turnOff('links');"> 
+<img src="linksoff.jpg" width="70" height="45" alt="Links" img="" name="links" class="imgTrans" border="0"></a>
+
+<br>
+<br>
+<table border="0" width="100%" cellpadding="2" cellspacing="2">
+<tbody>
+<tr align="left">
+<td valign="top" align="center">
+<img src="hultband2.jpeg" width="550" height="500"></a>
+<img src="hultband3.jpeg" width="550" height="500"></a>  
+<br>
+</td>
+</tr>  
+<tr align="left">
+<td valign="top" align="center"> 
+<img src="hallow.jpg" width="550" height="500"></a>
+<img src="cbc.jpg" width="550" height="500"></a>              
+<br>
+</td>
+</tr>     
+<br>
+</td>
+</tr>
+<tr align="left">
+<td valign="top" align="center"> 
+<img src="newbob.jpg" width="165" height="500"></a>
+<img src="newjimbob.jpg" width="350" height="500"></a>  
+<img src="hallojim.jpg" width="350" height="500"></a>             
+<br>
+</td>
+</tr>
+<--
+<tr align="left">
+<td valign="top" align="center"> 
+<img src="cardrums.jpg" width="500" height="500"></a>
+<img src="tonydrums.jpg" width="500" height="500"></a>              
+<br>
+</td>
+</tr>
+-->
+<tr align="left">
+<td valign="top" align="center"> 
+<img src="carolyn.jpg" width="252" height="300"></a>
+<img src="tony.jpg" width="220" height="300"></a>              
+<br>
+</td>
+</tr>
+<tr align="left">
+<td valign="top" align="center"> 
+<img src="jim.jpg" width="300" height="330"></a>
+<img src="bob.jpg" width="230" height="330"></a>              
+<br>
+</td>
+</tr>
+
+</big></big>
+</body>
+</html>

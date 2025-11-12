@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>                                                                       
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft Word 97">
+<title>Wait And See</title>
+                         
+<script type="text/javascript">
+/****************************************** Dissolving Image Rollover- By Roy Whittle (http://www.javascript-fx.com/)* Featured on/available at http://www.dynamicdrive.com/* This notice must stay intact for use*****************************************/
+//Generate transition CSS (transition=0 to 23)
+document.write('<STYLE TYPE="text/css">.imgTrans{ filter:revealTrans(duration=0.4,transition=23)}</STYLE>');
+//Uncomment the next line for fading rollovers instead of dissolving:
+//document.write('<STYLE TYPE="text/css">.imgTrans{ filter:blendTrans(duration=0.4) }</STYLE>');
+var onImages=new Array();
+function Rollover(imgName, imgSrc){	
+	onImages[imgName] = new Image();	
+	onImages[imgName].src = imgSrc;}
+function turnOn(imgName){ 	
+	if(document.images[imgName].filters != null)
+		document.images[imgName].filters[0].apply();
+		document.images[imgName].offSrc = document.images[imgName].src;
+		document.images[imgName].src    = onImages[imgName].src;
+		if(document.images[imgName].filters != null)					document.images[imgName].filters[0].play();}
+function turnOff(imgName){ 	
+	if(document.images[imgName].filters != null)
+		document.images[imgName].filters[0].stop();
+		document.images[imgName].src = document.images[imgName].offSrc;}
+//Specify name of participating images, plus paths to their onMouseover replacements:
+Rollover("home", "homeon.jpg");
+Rollover("dates", "dateson.jpg");
+Rollover("pics", "picson.jpg");  
+Rollover("about", "abouton.jpg");  
+Rollover("links", "linkson.jpg");  
+
+</script>
+                 
+</head>
+ <body text="#000000" link="#222222" vlink="#333333" alink="#444444">
+<br><big><big><big>
+<img src="name.jpg">
+<br>
+<br>
+
+<a href="index.html" onmouseover="turnOn('home');" onmouseout="turnOff('home');">
+ <img src="homeoff.jpg" width="70" height="45" alt="Tour" img="" name="home" class="imgTrans" border="0"></a>
+
+<a href="pictures.html" onmouseover="turnOn('pics');" onmouseout="turnOff('pics');"> 
+<img src="picsoff.jpg" width="70" height="45" alt="Pictures" img="" name="pics" class="imgTrans" border="0"></a>
+
+<a href="links.html" onmouseover="turnOn('links');" onmouseout="turnOff('links');"> 
+<img src="linksoff.jpg" width="70" height="45" alt="Links" img="" name="links" class="imgTrans" border="0"></a>
+<!--
+<big>2012</big>
+<br>
+<br>
+January 7th (Sat) - The Windjammer (5353 Lakeshore Rd., Burlington)
+<br>
+<br>
+January 14th (Sat) - The Street Tap and Eatery (547 Ontario St., St. Catharines)
+<br>
+<br>
+February 11th (Sat) - The Queens Head (400 Brant St., Burlington - near Lakeshore Rd.)
+<br>
+<br>
+February 24th (Fri) - The Street Tap and Eatery (547 Ontario St., St. Catharines)
+<br>
+<br>
+February 25th (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+March 3rd (Sat) - The Street Tap and Eatery (547 Ontario St., St. Catharines)
+<br>
+<br>
+March 31st (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+April 7th (Sat) - The Street Tap and Eatery (547 Ontario St., St. Catharines)
+<br>
+<br>
+April 20th (Fri) -  Private Party
+<br>
+<br>
+April 21st (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+April 27th/28th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+May 12th (Sat) - The Street Tap and Eatery (547 Ontario St., St. Catharines)
+<br>
+<br>
+May 25th/26th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+June 2nd (Sat) - The Street Tap and Eatery (547 Ontario St., St. Catharines)
+<br>
+<br>
+June 9th (Sat) - Private Party
+<br>
+<br>
+June 15th (Fri) - The Slye Fox (4057 New Street, Burlington)
+<br>
+<br>
+June 22nd (Fri) - Private Party
+<br>
+<br>
+June 29th/30th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+July 14th (Sat) - Private Party
+
+<br>
+<br>
+August 18th (Sat) - The Queens Head (400 Brant St., Burlington - near Lakeshore Rd.)
+<br>
+<br>
+Sept 1st (Sat) ** 12 noon until 4pm ** - Hard Rock Cafe (5705 Falls Ave., Niagara Falls)
+<br>
+<br>
+Sept 21st (Fri) - The Street Tap and Eatery (547 Ontario St., St. Catharines)
+<br>
+<br>
+Oct 5th/6th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+Oct 27th (Sat) - The Purple Heather (3600 Dundas Street West, Burlington - at Walker's)
+<br>
+<br>
+Nov 2nd/3rd (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+Nov 16th (Fri) - The Slye Fox (4057 New Street, Burlington)
+<br>
+<br>
+Nov 17th (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+Nov 23rd (Fri) - The Street Tap and Eatery (547 Ontario St., St. Catharines)
+<br>
+<br>
+Dec 21st/22nd (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+
+<br>
+<br>
+Jan 18th/19th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+Feb 15th (Fri) - The Slye Fox (4057 New Street, Burlington)
+<br>
+<br>
+Feb 23rd (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+Mar 2nd (Sat) - The Purple Heather (3600 Dundas Street West, Burlington - at Walker's)
+<br>
+<br>
+Mar 22nd/23rd (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+Apr 12th/13th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+Apr 27th (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+May 4th (Sat) - The Queens Head (400 Brant St., Burlington - near Lakeshore Rd.)
+
+<br>
+<br>
+May 10th (Fri) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+May 11th (Sat) -  Charity benefit in St.Catharines.<br>  
+(email waitandsee@cogeco.ca for details)
+<br>
+<br>
+May 24th/25th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+May 26th (Sun) ** 4pm until 8pm ** - Hard Rock Cafe (5705 Falls Ave., Niagara Falls)
+<br>
+<br>
+June 14th/15th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+June 20th - Private Function (St.Catharines)
+<br>
+<br>
+June 21st (Fri) - Moe's (Port Colbourne)
+<br>
+<br>
+June 22nd (Sat) - American House (Waterdown)
+<br>
+<br>
+Aug 30th (Fri) - American House (Waterdown)
+
+<br>
+<br>
+Sep 13th (Fri) - Moe's (Port Colborne)
+<br>
+<br>
+Sep 20th (Fri) - The Watermark (Waterdown)
+<br>
+<br>
+Oct 4th/5th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+Oct 19th (Sat) - Moe's (Port Colborne)
+<br>
+<br>
+Nov 1st (Fri) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+Nov 2nd (Sat) - American House (Waterdown)
+<br>
+<br>
+Nov 15th/16th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+Nov 29th (Fri) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+Nov 30th (Sat) - Moe's (Port Colborne)
+-->
+<br>
+<br>
+Dec 14th (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+Dec 21st (Sat) - Moe's (Port Colborne)
+<br>
+<br>
+<big><big>
+2014
+</big></big>
+<br>
+<br>
+Jan 18th (Sat) - American House (Waterdown)
+<br>
+<br>
+Jan 24th (Fri) - Moe's (Port Colborne)
+<br>
+<br>
+Jan 25th (Sat) - The Purple Heather (3600 Dundas Street West, Burlington - at Walker's)
+<br>
+<br>
+Feb 8th (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+Mar 7th/8th (Fri/Sat) - Come By Chance (78 Melvin Ave., Hamilton)
+<br>
+<br>
+Mar 21st (Fri) - American House (Waterdown)
+<br>
+<br>
+Mar 22nd (Sat) - Moe's (Port Colborne)
+<br>
+<br>
+Mar 29th (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+Apr 26th (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+May 2nd (Fri) - Moe's (Port Colborne)
+<br>
+<br>
+May 3rd (Sat) - American House (Waterdown)
+<br>
+<br>
+May 31st (Sat) -  Buddy's Roadhouse (1360 King St. E. Hamilton)
+<br>
+<br>
+Jun 13th (Fri) - Moe's (Port Colborne)
+<br>
+<br>
+</body>
+</html>
